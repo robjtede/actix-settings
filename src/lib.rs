@@ -4,10 +4,10 @@
 mod core;
 mod actix;
 
-use actix_http::{KeepAlive as ActixKeepAlive, Request, Response};
+use actix_http::{body::MessageBody, KeepAlive as ActixKeepAlive, Request, Response};
 use actix_service::{IntoServiceFactory, ServiceFactory};
 use actix_web::{Error as WebError, HttpServer};
-use actix_web::dev::{AppConfig, MessageBody, Service};
+use actix_web::dev::{AppConfig, Service};
 pub use crate::core::Parse;
 pub use crate::actix::*;
 pub use crate::error::{AtError, AtResult};

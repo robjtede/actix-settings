@@ -1,6 +1,6 @@
 [package]
 name = "actix-settings"
-version = "0.5.2"
+version = "0.6.0"
 authors = ["Joey Ezechiels <joey.ezechiels@gmail.com>"]
 edition = "2018"
 description = "a crate to easily manage actix-web's settings from a TOML file and environment variables"
@@ -11,7 +11,7 @@ license = "MIT OR Apache-2.0"
 [dependencies]
 actix-http = "2.1"
 actix-service = "1.0"
-actix-web = "3.1"
+actix-web = "4.1"
 ioe = "0.4"
 lazy_static = "1.4"
 regex = "1.4"

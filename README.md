@@ -1,6 +1,6 @@
-# actix-toml
+# actix_settings
 
-A Rust crate that allows for configuring `actix-web`'s [HttpServer](https://docs.rs/actix-web/3.2.0/actix_web/struct.HttpServer.html) instance through a `TOML` file.
+A Rust crate that allows for configuring `actix-web`'s [HttpServer](https://docs.rs/actix-web/4.1.0/actix_web/struct.HttpServer.html) instance through a `TOML` file.
 
 ## Usage
 
@@ -8,8 +8,8 @@ Add this to your `Cargo.toml`:
 
 ``` toml
 [dependencies]
-actix-toml = "0.5"
-actix-web  = "3.1"
+actix-settings = "0.6"
+actix-web  = "4.1"
 env_logger = "0.8"
 ```
 
@@ -18,7 +18,7 @@ env_logger = "0.8"
 Import these items into your crate:
 
 ``` rust
-use actix_toml::{ApplySettings, AtResult, Settings};
+use actix_settings::{ApplySettings, AtResult, Settings};
 use actix_web::http::ContentEncoding;
 use std::sync::Arc;
 ```
